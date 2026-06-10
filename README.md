@@ -114,6 +114,6 @@ When the next object is detected in a specific zone, the system checks whether t
 
 The updated system has delivered high-quality results with input images and video files. The average frame rate when processing video from a downloaded file was 33 frames per second, whilst processing video from the laptop’s camera in real time yielded 25 frames.
 
-<img width="541" height="306" alt="image" src="https://github.com/user-attachments/assets/cc35607e-df57-4949-8143-9df04cf118dc" />
+<img width="662" height="374" alt="image" src="https://github.com/user-attachments/assets/cc35607e-df57-4949-8143-9df04cf118dc" />
 
 
