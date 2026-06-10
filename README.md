@@ -101,11 +101,15 @@ Reading data from the meter:
 <img width="662" height="374" alt="image" src="https://github.com/user-attachments/assets/b66bf20e-19f7-4128-a57d-3db83665dfa4" />
 
 
+
+
 Data from the total_counts counter, containing the number of unique objects detected within the polygons, is output after the entire video has been processed.
 Logic for detecting unique objects: two dictionaries, tracked_objects_A and tracked_objects_B, are created corresponding to the two zones. If an object is detected in one of the polygons, its object_id is written to the corresponding dictionary, and +1 object is added to the total_counts counter for the corresponding zone.
 When the next object is detected in a specific zone, the system checks whether the object’s identifier (object_id) has been recorded in the corresponding dictionary; if not, the system adds it to the overall statistics, and if so, it is clear that this object has already been detected in this zone previously and there is no point in recording it again – we skip it.
 
 <img width="170" height="215" alt="image" src="https://github.com/user-attachments/assets/24aad390-4675-481c-903e-6fe8f29f16a6" />
+
+
 
 
 The updated system has delivered high-quality results with input images and video files. The average frame rate when processing video from a downloaded file was 33 frames per second, whilst processing video from the laptop’s camera in real time yielded 25 frames.
