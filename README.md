@@ -11,6 +11,7 @@ The following tools were used to carry out the project:
 ## 1. Data collection and annotation
 The dataset for training the computer vision model was collected by searching for images in open sources (ready-made Roboflow datasets, web scraping) and by frame-by-frame segmentation of personally recorded videos using the ffmpeg tool.
 The image set was uploaded to the Roboflow website for further processing (annotation) of each photo.
+
 <img width="400" height="218" alt="image" src="https://github.com/user-attachments/assets/bc9e82d9-2e02-4146-9fba-4901a0772205" />
 <img width="400" height="218" alt="image" src="https://github.com/user-attachments/assets/4609d17c-eeda-4630-b5ff-34f7489fc5f6" />
 
@@ -45,6 +46,7 @@ We initialise the weights of the yolov8m model – a mid-range model in the yolo
 
 ## 5. Model inference
 The model’s accuracy allows it to classify and detect objects in images with near-perfect precision. Let’s write a function that takes an image as input, detects the required objects in it, and outputs the confidence score for each one. The model can easily find all the required objects and determine their class with reasonable confidence:
+
 <img width="400" height="314" alt="image" src="https://github.com/user-attachments/assets/96c8046e-01e2-47cc-86b0-bbf6c6939793" />
 <img width="400" height="314" alt="image" src="https://github.com/user-attachments/assets/f94bd358-88f3-4147-a45e-abd0a46ca3e5" />
 
@@ -54,9 +56,11 @@ The model’s accuracy allows it to classify and detect objects in images with n
 The programme is also capable of identifying objects in videos with a high degree of accuracy. The built-in video handling function allows you to load a video file from the `input_videos` folder, stream it in a separate window, and save it to the `output_videos` folder if required. Let’s copy the trained model to a separate file (ColaPepsiNet.pt), initialise it, switch to fuse() mode, and initialise the video processing function process_video_with_tracking()
 
 Object detection in videos is just as accurate as in photos. The function also displays the FPS value for the video to assess the model’s performance. Depending on the lighting, the quality of the video stream and its load, the average FPS is 35–40 frames per second, which is quite comfortable for people to watch.
+
 <img width="650" height="400" alt="image" src="https://github.com/user-attachments/assets/3ee74eca-32c7-4313-af26-08f3a340521d" />
 
 
 The input can be either a video file saved in a folder or a live video feed from a laptop camera
+
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/7b740c2e-cf35-451f-bd68-a14eff2c0f21" />
 
